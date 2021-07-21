@@ -1,0 +1,16 @@
+.header__link {
+  text-decoration: none;
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  color: #fff; 
+}
+
+.header__link:hover {
+  opacity: .6;
+}
+
+.header__link:nth-child(1n) {
+  padding-right: 24px;
+}
