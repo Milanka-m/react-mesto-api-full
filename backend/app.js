@@ -36,12 +36,6 @@ async function start() {
 app.use(requestLogger); // подключаем логгер запросов
 app.use(corsMiddlevare);
 
-app.get('/crash-test', () => {
-  setTimeout(() => {
-    throw new Error('Сервер сейчас упадёт');
-  }, 0);
-});
-
 // роуты, не требующие авторизации
 app.post('/signup', celebrate({
   body: Joi.object().keys({
